@@ -20,8 +20,13 @@
    0. Normalize
    ========================================================================== */
 
+@font-face {
+    font-family: ali-cn;
+    src: url(/assets/font/alibaba-cn-light.ttf) format('truetype');
+}
+
 html {
-    font-family: sans-serif;
+    font-family: ali-cn;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -58,7 +63,7 @@ svg:not(:root) { overflow: hidden; }
 figure { margin: 1em 40px; }
 hr { box-sizing: content-box; height: 0; }
 pre { overflow: auto; }
-code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1em; }
+code, kbd, pre, samp { font-family: ali-cn; font-size: 1em; }
 button, input, optgroup, select, textarea {
     color: inherit;
     font: inherit;
@@ -104,14 +109,14 @@ td, th{ padding: 0; }
 }
 
 body{
-    font-family: "ff-basic-gothic-pro", "Roboto", sans-serif;
+    font-family: ali-cn, sans-serif;
     background: #EBE9E4;
     color: #333333;
     font-weight: normal;
 }
 
 a{
-    color: #E83030;
+    color: #e83030;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -125,19 +130,19 @@ a:hover{
 }
 
 h1{
-    font-size: 38px;
-}
-
-h2{
-    font-size: 32px;
-}
-
-h3{
     font-size: 26px;
 }
 
-h4{
+h2{
+    font-size: 24px;
+}
+
+h3{
     font-size: 22px;
+}
+
+h4{
+    font-size: 20px;
 }
 
 h5{
@@ -145,12 +150,12 @@ h5{
 }
 
 h6{
-    font-size: 14px;
+    font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: "roboto-mono", "Roboto Mono", sans-serif;
-    color: #E83030;
+    font-family: ali-cn, sans-serif;
+    color: #000;
     margin: 30px 0;
     font-weight: 300;
     margin-top: 90px;
@@ -158,7 +163,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 p{
-    font-size: 22px;
+    font-size: 16px;
     line-height: 29px;
     font-weight: 200;
     margin-bottom: 30px;
@@ -169,13 +174,13 @@ ul, ol{
 }
 
 li{
-    font-size: 22px;
+    font-size: 16px;
     line-height: 29px;
     font-weight: 200;
 }
 
 pre{
-    font-family: monospace;
+    font-family: ali-cn;
     background-color: #f1f1f1;
     display: block;
     border: 1px solid #cccccc;
@@ -192,7 +197,7 @@ pre code{
 }
 
 code{
-    font-family: monospace;
+    font-family: ali-cn;
     background-color: #f1f1f1;
     display: inline-block;
     border: 1px solid #f1f1f1;
@@ -211,18 +216,18 @@ mark {
 }
 
 blockquote{
-    margin: 60px 0 60px -103px;
-    font-size: 32px;
-    letter-spacing: -1px;
+    margin: 60px 0;
+    font-size: 16px;
+    letter-spacing: -0.5px;
     line-height: 42px;
-    color: #DF1825;
+    color: #7f7f7f;
     position: relative;
 }
 
 blockquote:before {
     content: '';
-    width: 50px;
-    height: 40px;
+    width: 25px;
+    height: 20px;
     background-image: url(../img/quotes.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -234,7 +239,7 @@ blockquote:before {
 }
 
 blockquote p{
-    font-size: 32px;
+    font-size: 16px;
     letter-spacing: -1px;
     line-height: 42px;
     color: #DF1825;
@@ -264,12 +269,12 @@ figure{
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
-    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-family: ali-cn, sans-serif;
     font-size: 16px;
 }
 
 .btn:hover{
-    color: #e82f30;
+    color: #7281ff;
     background: #fff;
     box-shadow: 0 0 8px 0 rgba(200,195,183,0.3);
 }
@@ -309,7 +314,7 @@ header .blog-logo a span{
 }
 
 header .blog-logo a:hover{
-    color: #E83030;
+    color: #7281ff;
 }
 
 header .blog-logo a img{
@@ -341,8 +346,8 @@ header .btns a .counter{
     top: -9px;
     left: -9px;
     font-size: 10px;
-    /*background: #E83030;*/
-    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    /*background: #e83030;*/
+    font-family: ali-cn, sans-serif;
     color: #fff;
     border-radius: 50%;
     width: 20px;
@@ -363,7 +368,7 @@ header .btns a .counter:before{
     height: 20px;
     left: 50%;
     margin-left: -10px;
-    background: #E83030;
+    background: #e83030;
     position: absolute;
     z-index: -1;
 }
@@ -389,7 +394,7 @@ header .btns a svg path{
 }
 
 header .btns a:hover svg path{
-    fill: #E83030;
+    fill: #7281ff;
 }
 
 header .btns a:last-child{
@@ -415,7 +420,7 @@ header nav ul li:last-child{
 header nav ul li a{
     color: #262626;
     font-size: 15px;
-    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-family: ali-cn, sans-serif;
     letter-spacing: 5px;
     line-height: 20px;
     font-weight: normal;
@@ -425,7 +430,7 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    color: #E83030;
+    color: #7281ff;
 }
 
 header .modal-footer{
@@ -442,7 +447,7 @@ header #search-field{
     color: #262626;
     font-size: 15px;
     line-height: 20px;
-    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-family: ali-cn, sans-serif;
 }
 
 header #search-field:focus{
@@ -556,7 +561,7 @@ header h5:before{
     color: #51C3B7;
     font-size: 15px;
     line-height: 27px;
-    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-family: ali-cn, sans-serif;
     display: block;
     font-weight: normal;
 }
@@ -566,12 +571,12 @@ header h5:before{
     font-size: 19px;
     letter-spacing: -1px;
     line-height: 25px;
-    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-family: ali-cn, sans-serif;
     font-weight: normal;
 }
 
 .list-box li a:hover{
-    color: #E83030;
+    color: #7281ff;
 }
 
 .bookmark-container .no-bookmarks{
@@ -581,7 +586,7 @@ header h5:before{
 }
 
 .bookmark-container .no-bookmarks .circle{
-    border: 1px solid #5FCCC4;
+    border: 1px solid #7281ff;
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -606,7 +611,7 @@ header h5:before{
 }
 
 .social li a:hover{
-    color: #E83030;
+    color: #7281ff;
 }
 
 /* ==========================================================================
@@ -638,21 +643,22 @@ header h5:before{
 .article-container .author-name{
     position: relative;
     z-index: 2;
-    padding-bottom: 100px;
+    padding-bottom: 130px;
     display: block;
     color: #B9B2A2;
+    text-align: left;
 }
 
 .article-container .post-title{
-    font-size: 70px;
+    font-size: 32px;
     font-weight: 300;
     line-height: 90px;
-    text-align: center;
-    margin: 200px auto 50px;
+    text-align: left;
+    margin: 200px auto 20px;
     color: #333333;
     position: relative;
     display: inline-block;
-    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-family: ali-cn, sans-serif;
     z-index: 2;
 }
 
@@ -666,12 +672,12 @@ header h5:before{
 }
 
 .article-container .post-date{
-    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-family: ali-cn, sans-serif;
     color: #FFFFFF;
     font-size: 15px;
     text-align: center;
     line-height: 27px;
-    background: #5FCCC4;
+    background: #7281ff;
     padding: 2px 15px;
     border-radius: 50px;
     position: absolute;
@@ -688,11 +694,11 @@ header h5:before{
     letter-spacing: 3px;
     color: #B9B2A2;
     text-transform: uppercase;
-    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-family: ali-cn, sans-serif;
 }
 
 .article-container .author-name a:hover{
-    color: #E83030;
+    color: #7281ff;
 }
 
 .post-cover.has-image:hover .cloned-content{
@@ -792,7 +798,7 @@ header h5:before{
     font-weight: 300;
     line-height: 20px;
     color: #AAA391;
-    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-family: ali-cn, sans-serif;
     position: absolute;
     top: 54px;
     left: -103px;
@@ -897,11 +903,12 @@ header h5:before{
 
 .loop .next a,
 .loop .prev a{
-    color: #fff;
+    fill: #fff;
     border-radius: 50%;
-    background-color: #5FCCC4;
-    width: 44px;
-    height: 44px;
+    background-color: #7281ff;
+    border: 1px solid #7281ff;
+    width: 42px;
+    height: 42px;
     display: block;
     position: relative;
     opacity: 0;
@@ -925,11 +932,13 @@ header h5:before{
 .loop .prev a svg{
     width: 26px;
     height: 17px;
+    vertical-align: 3px;
 }
 
 .loop .next a:hover,
 .loop .prev a:hover{
-    background-color: #e82f30;
+    fill: #7281ff;
+    background-color: #fff;
 }
 
 .loop .prev{
@@ -959,7 +968,7 @@ header h5:before{
 }
 
 .editor-content a:not(.img-holder){
-    border-bottom: 1px solid #E83030;
+    border-bottom: 1px solid #e83030;
 }
 
 .editor-content a:not(.img-holder):hover{
@@ -1001,8 +1010,8 @@ header h5:before{
     position: absolute;
     top: 20px;
     right: 25px;
-    color: #E83030;
-    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    color: #e83030;
+    font-family: ali-cn, sans-serif;
     font-size: 15px;
     line-height: 20px;
 }
@@ -1015,7 +1024,7 @@ header h5:before{
     position: absolute;
     top: 20px;
     left: 20px;
-    border: 1px solid #5FCCC4;
+    border: 1px solid #7281ff;
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -1032,7 +1041,7 @@ header h5:before{
     margin-left: -5px;
     margin-top: -5px;
     border-radius: 50%;
-    background: #5FCCC4;
+    background: #7281ff;
     transform: scale(0);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -1181,7 +1190,7 @@ header h5:before{
     font-weight: 300;
     line-height: 20px;
     color: #AAA391;
-    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-family: ali-cn, sans-serif;
 }
 
 .share-on p{
@@ -1200,7 +1209,7 @@ header h5:before{
 
 .share-on a:hover{
     border: none;
-    color: #E83030;
+    color: #7281ff;
 }
 
 /* ==========================================================================
@@ -1217,7 +1226,7 @@ header h5:before{
 }
 
 .author h4{
-    font-family: "europa", "Cabin", sans-serif;
+    font-family: ali-cn, sans-serif;
     font-size: 16px;
     font-weight: bold;
     line-height: 25px;
@@ -1280,11 +1289,11 @@ header h5:before{
     font-size: 12px;
     line-height: 22px;
     letter-spacing: 3px;
-    color: #E83030;
+    color: #e83030;
     font-weight: normal;
     text-transform: uppercase;
     margin: 17px 0;
-    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-family: ali-cn, sans-serif;
 }
 
 .author .social{
@@ -1356,7 +1365,7 @@ header h5:before{
 }
 
 .tags li a:hover{
-    color: #E83030;
+    color: #7281ff;
 }
 
 .tags li a:before{
@@ -1386,7 +1395,7 @@ header h5:before{
     right: 0;
     height: 100%;
     width: 64px;
-    color: #5FCCC4;
+    color: #7281ff;
     font-size: 20px;
     background-image: url('../img/next.svg');
     background-repeat: no-repeat;
@@ -1441,7 +1450,7 @@ header h5:before{
    ========================================================================== */
 
 footer h3{
-    color: #E83030;
+    color: #e83030;
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 26px;
@@ -1459,7 +1468,7 @@ footer .tags li a{
 }
 
 footer .copyright{
-    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-family: ali-cn, sans-serif;
     text-align: center;
     font-size: 14px;
     margin-top: 100px;
@@ -1472,20 +1481,20 @@ footer .copyright{
 
 @media (max-width: 1199px) {
     p {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 24px;
     }
     li{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 24px;
     }
     blockquote{
         margin: 60px 0 60px -88px;
-        font-size: 24px;
+        font-size: 16px;
         line-height: 34px;
     }
     blockquote p{
-        font-size: 24px;
+        font-size: 16px;
         line-height: 34px;
     }
     .loop .swiper-container{
@@ -1498,7 +1507,7 @@ footer .copyright{
         margin-left: -20px;
     }
     .article-container .post-title{
-        font-size: 52px;
+        font-size: 32px;
         line-height: 72px;
     }
     .article-container .post-content .kg-image-card.kg-width-wide{
@@ -1581,22 +1590,22 @@ footer .copyright{
         margin-top: 50px;
     }
     h1{
-        font-size: 32px;
+        font-size: 26px;
     }
     h2{
-        font-size: 26px;
+        font-size: 24px;
     }
     h3{
         font-size: 22px;
     }
     h4{
-        font-size: 18px;
+        font-size: 20px;
     }
     h5{
-        font-size: 14px;
+        font-size: 18px;
     }
     h6{
-        font-size: 12px;
+        font-size: 16px;
     }
     header .blog-logo a img{
         max-width: 100%;

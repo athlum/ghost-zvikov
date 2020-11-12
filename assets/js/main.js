@@ -5,8 +5,8 @@
 jQuery(document).ready(function($) {
 
     var config = {
-        'content-api-host': '',
-        'content-api-key': '',
+        'content-api-host': 'http://127.0.0.1:2368',
+        'content-api-key': '808d4f17e31b5752e8bbf48931',
 	};
 	
     var ghostAPI = new GhostContentAPI({
